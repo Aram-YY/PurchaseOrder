@@ -1,0 +1,360 @@
+2019-12-13 08:50:04.463 [main] INFO  com.csdj.lyn.LynApplication - Starting LynApplication on DESKTOP-E1183FD with PID 13088 (C:\Users\mi\Desktop\PurchaseOrder\target\classes started by mi in C:\Users\mi\Desktop\PurchaseOrder)
+2019-12-13 08:50:04.473 [main] DEBUG com.csdj.lyn.LynApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-13 08:50:04.473 [main] INFO  com.csdj.lyn.LynApplication - No active profile set, falling back to default profiles: default
+2019-12-13 08:50:06.643 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-13 08:50:06.643 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-13 08:50:06.643 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-13 08:50:06.643 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-13 08:50:06.643 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-12-13 08:50:06.643 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-13 08:50:06.643 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-13 08:50:06.653 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-12-13 08:50:06.813 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring embedded WebApplicationContext
+2019-12-13 08:50:07.023 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-12-13 08:50:07.023 [main] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-13 08:50:07.193 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-12-13 08:50:07.263 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-13 08:50:07.513 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-13 08:50:07.733 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-13 08:50:07.903 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-13 08:50:08.163 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-13 08:50:09.203 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-13 08:50:09.253 [main] INFO  com.csdj.lyn.LynApplication - Started LynApplication in 5.432 seconds (JVM running for 8.655)
+2019-12-13 08:50:29.278 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-13 08:50:30.472 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 08:50:30.522 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 08:50:30.548 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 08:50:30.557 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 08:50:30.558 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 08:50:30.563 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 1
+2019-12-13 08:50:51.466 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` WHERE `project` LIKE CONCAT('%',?,'%') 
+2019-12-13 08:50:51.467 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 手(String)
+2019-12-13 08:50:51.468 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 08:50:51.470 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` WHERE `project` LIKE CONCAT('%',?,'%') limit ?,?; 
+2019-12-13 08:50:51.470 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 手(String), 0(Integer), 10(Integer)
+2019-12-13 08:50:51.472 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 1
+2019-12-13 08:51:52.556 [main] INFO  com.csdj.lyn.LynApplication - Starting LynApplication on DESKTOP-E1183FD with PID 4324 (C:\Users\mi\Desktop\PurchaseOrder\target\classes started by mi in C:\Users\mi\Desktop\PurchaseOrder)
+2019-12-13 08:51:52.556 [main] DEBUG com.csdj.lyn.LynApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-13 08:51:52.556 [main] INFO  com.csdj.lyn.LynApplication - No active profile set, falling back to default profiles: default
+2019-12-13 08:51:54.336 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-13 08:51:54.336 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-13 08:51:54.336 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-13 08:51:54.336 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-13 08:51:54.336 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-12-13 08:51:54.336 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-13 08:51:54.336 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-13 08:51:54.346 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-12-13 08:51:54.496 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring embedded WebApplicationContext
+2019-12-13 08:51:54.636 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-12-13 08:51:54.636 [main] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-13 08:51:54.756 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-12-13 08:51:54.816 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-13 08:51:54.966 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-13 08:51:55.126 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-13 08:51:55.266 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-13 08:51:55.446 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-13 08:51:56.126 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-13 08:51:56.146 [main] INFO  com.csdj.lyn.LynApplication - Started LynApplication in 4.281 seconds (JVM running for 6.68)
+2019-12-13 08:51:59.890 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-13 08:52:00.407 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 08:52:00.441 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 08:52:00.461 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 08:52:00.468 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 08:52:00.469 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 08:52:00.472 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 1
+2019-12-13 09:17:21.614 [main] INFO  com.csdj.lyn.LynApplication - Starting LynApplication on DESKTOP-E1183FD with PID 4508 (C:\Users\mi\Desktop\PurchaseOrder\target\classes started by mi in C:\Users\mi\Desktop\PurchaseOrder)
+2019-12-13 09:17:21.614 [main] DEBUG com.csdj.lyn.LynApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-13 09:17:21.614 [main] INFO  com.csdj.lyn.LynApplication - No active profile set, falling back to default profiles: default
+2019-12-13 09:17:23.654 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-13 09:17:23.654 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-13 09:17:23.654 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-13 09:17:23.654 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-13 09:17:23.654 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-12-13 09:17:23.654 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-13 09:17:23.664 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-13 09:17:23.664 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-12-13 09:17:23.834 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring embedded WebApplicationContext
+2019-12-13 09:17:24.004 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-12-13 09:17:24.004 [main] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-13 09:17:24.164 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-12-13 09:17:24.224 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-13 09:17:24.414 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-13 09:17:24.584 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-13 09:17:24.774 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-13 09:17:25.054 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-13 09:17:25.314 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-12-13 09:17:25.324 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-12-13 09:17:25.324 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-12-13 09:18:54.961 [main] INFO  com.csdj.lyn.LynApplication - Starting LynApplication on DESKTOP-E1183FD with PID 3688 (C:\Users\mi\Desktop\PurchaseOrder\target\classes started by mi in C:\Users\mi\Desktop\PurchaseOrder)
+2019-12-13 09:18:54.961 [main] DEBUG com.csdj.lyn.LynApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-13 09:18:54.961 [main] INFO  com.csdj.lyn.LynApplication - No active profile set, falling back to default profiles: default
+2019-12-13 09:18:56.721 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-13 09:18:56.721 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-13 09:18:56.721 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-13 09:18:56.731 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-13 09:18:56.731 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-12-13 09:18:56.731 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-13 09:18:56.731 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-13 09:18:56.731 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-12-13 09:18:56.881 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring embedded WebApplicationContext
+2019-12-13 09:18:57.017 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-12-13 09:18:57.017 [main] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-13 09:18:57.127 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-12-13 09:18:57.177 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-13 09:18:57.297 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-13 09:18:57.437 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-13 09:18:57.567 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-13 09:18:57.757 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-13 09:18:58.547 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-13 09:18:58.587 [main] INFO  com.csdj.lyn.LynApplication - Started LynApplication in 4.317 seconds (JVM running for 6.504)
+2019-12-13 09:19:06.499 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-13 09:19:07.067 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:19:07.115 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:19:07.133 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:19:07.136 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:19:07.136 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:19:07.140 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 1
+2019-12-13 09:19:39.965 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.addCri - ==>  Preparing: INSERT INTO `purchaseorder`(`project`,`supplier`,`suppdate`,`suppliercontact`,`sarehouse`,`buyer`,`totalorders`)VALUES(?,?,?,?,?,?,?) 
+2019-12-13 09:19:39.967 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.addCri - ==> Parameters: 电脑(String), 阿达(String), 2019-09-09(String), 10000(String), 19899999999(String), 2323(String), zen(String)
+2019-12-13 09:19:39.970 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.addCri - <==    Updates: 1
+2019-12-13 09:19:48.884 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:19:48.884 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:19:48.890 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:19:48.891 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:19:48.892 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:19:48.893 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 2
+2019-12-13 09:20:00.193 [http-nio-8080-exec-8] ERROR o.a.c.c.C.[.[.[/layui].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/layui] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Optional int parameter 'id' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+java.lang.IllegalStateException: Optional int parameter 'id' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:245)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:116)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-12-13 09:20:03.066 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:20:03.067 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:20:03.069 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:20:03.070 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:20:03.070 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:20:03.072 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 2
+2019-12-13 09:21:22.565 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:21:22.565 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:21:22.567 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:21:22.568 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:21:22.568 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:21:22.570 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 2
+2019-12-13 09:21:53.768 [main] INFO  com.csdj.lyn.LynApplication - Starting LynApplication on DESKTOP-E1183FD with PID 4960 (C:\Users\mi\Desktop\PurchaseOrder\target\classes started by mi in C:\Users\mi\Desktop\PurchaseOrder)
+2019-12-13 09:21:53.768 [main] DEBUG com.csdj.lyn.LynApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-13 09:21:53.768 [main] INFO  com.csdj.lyn.LynApplication - No active profile set, falling back to default profiles: default
+2019-12-13 09:21:55.678 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-13 09:21:55.678 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-13 09:21:55.678 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-13 09:21:55.688 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-13 09:21:55.688 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-12-13 09:21:55.688 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-13 09:21:55.688 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-13 09:21:55.688 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-12-13 09:21:55.868 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring embedded WebApplicationContext
+2019-12-13 09:21:56.028 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-12-13 09:21:56.028 [main] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-13 09:21:56.158 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-12-13 09:21:56.218 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-13 09:21:56.408 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-13 09:21:56.558 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-13 09:21:56.688 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-13 09:21:56.888 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-13 09:21:57.828 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-13 09:21:57.858 [main] INFO  com.csdj.lyn.LynApplication - Started LynApplication in 4.75 seconds (JVM running for 7.243)
+2019-12-13 09:22:00.385 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-13 09:22:01.049 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:22:01.087 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:22:01.103 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:22:01.105 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:22:01.106 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:22:01.111 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 2
+2019-12-13 09:22:11.295 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.addCri - ==>  Preparing: INSERT INTO `purchaseorder`(`project`,`supplier`,`suppdate`,`suppliercontact`,`sarehouse`,`buyer`,`totalorders`)VALUES(?,?,?,?,?,?,?) 
+2019-12-13 09:22:11.296 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.addCri - ==> Parameters: 电脑(String), 阿达(String), 2019-09-09(String), 10000(String), 1132323(String), 2323(String), zen(String)
+2019-12-13 09:22:11.298 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.addCri - <==    Updates: 1
+2019-12-13 09:22:17.809 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` WHERE `project` LIKE CONCAT('%',?,'%') 
+2019-12-13 09:22:17.810 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 电脑(String)
+2019-12-13 09:22:17.812 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:22:17.813 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` WHERE `project` LIKE CONCAT('%',?,'%') limit ?,?; 
+2019-12-13 09:22:17.814 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 电脑(String), 0(Integer), 10(Integer)
+2019-12-13 09:22:17.816 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 2
+2019-12-13 09:22:22.038 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.PurchaseMapper.delId - ==>  Preparing: DELETE FROM `purchaseorder` WHERE id=? 
+2019-12-13 09:22:22.039 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.PurchaseMapper.delId - ==> Parameters: 3(Integer)
+2019-12-13 09:22:22.042 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.PurchaseMapper.delId - <==    Updates: 1
+2019-12-13 09:22:25.032 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - ==>  Preparing: SELECT * FROM `purchaseorder` WHERE`id`=? 
+2019-12-13 09:22:25.032 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - ==> Parameters: 2(Integer)
+2019-12-13 09:22:25.034 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - <==      Total: 1
+2019-12-13 09:22:28.913 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - ==>  Preparing: update purchaseorder SET project=?, supplier=?, suppdate=?, suppliercontact=?, sarehouse=?, buyer=?, totalorders=? WHERE id=? 
+2019-12-13 09:22:28.915 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - ==> Parameters: 电脑(String), 阿达(String), 2019-09-09(String), 10000(String), 19899999999(String), 2323(String), ad1(String), 2(Integer)
+2019-12-13 09:22:28.918 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - <==    Updates: 1
+2019-12-13 09:22:31.355 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:22:31.356 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:22:31.357 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:22:31.359 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:22:31.359 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:22:31.362 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 2
+2019-12-13 09:23:08.725 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:23:08.725 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:23:08.726 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:23:08.727 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:23:08.727 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:23:08.729 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 2
+2019-12-13 09:23:14.214 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.delId - ==>  Preparing: DELETE FROM `purchaseorder` WHERE id=? 
+2019-12-13 09:23:14.215 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.delId - ==> Parameters: 2(Integer)
+2019-12-13 09:23:14.217 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.delId - <==    Updates: 1
+2019-12-13 09:23:26.769 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.PurchaseMapper.addCri - ==>  Preparing: INSERT INTO `purchaseorder`(`project`,`supplier`,`suppdate`,`suppliercontact`,`sarehouse`,`buyer`,`totalorders`)VALUES(?,?,?,?,?,?,?) 
+2019-12-13 09:23:26.770 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.PurchaseMapper.addCri - ==> Parameters: 电脑(String), 阿达(String), 2019-09-09(String), 10000(String), 1313131(String), 2313(String), 131(String)
+2019-12-13 09:23:26.772 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.PurchaseMapper.addCri - <==    Updates: 1
+2019-12-13 09:23:29.614 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - ==>  Preparing: SELECT * FROM `purchaseorder` WHERE`id`=? 
+2019-12-13 09:23:29.615 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - ==> Parameters: 1(Integer)
+2019-12-13 09:23:29.618 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - <==      Total: 1
+2019-12-13 09:23:34.821 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:23:34.822 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:23:34.824 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:23:34.827 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:23:34.827 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:23:34.830 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 2
+2019-12-13 09:23:36.151 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - ==>  Preparing: SELECT * FROM `purchaseorder` WHERE`id`=? 
+2019-12-13 09:23:36.152 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - ==> Parameters: 1(Integer)
+2019-12-13 09:23:36.153 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - <==      Total: 1
+2019-12-13 09:23:40.378 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - ==>  Preparing: update purchaseorder SET project=?, supplier=?, suppdate=?, suppliercontact=?, sarehouse=?, buyer=?, totalorders=? WHERE id=? 
+2019-12-13 09:23:40.379 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - ==> Parameters: 手机(String), 长沙daji(String), 2019-12-13(String), 17674444444444(String), 23131(String), 陆岳南(String), 15000(String), 1(Integer)
+2019-12-13 09:23:40.382 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - <==    Updates: 1
+2019-12-13 09:23:42.528 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:23:42.529 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:23:42.531 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:23:42.532 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:23:42.533 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:23:42.535 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 2
+2019-12-13 09:24:15.070 [main] INFO  com.csdj.lyn.LynApplication - Starting LynApplication on DESKTOP-E1183FD with PID 3240 (C:\Users\mi\Desktop\PurchaseOrder\target\classes started by mi in C:\Users\mi\Desktop\PurchaseOrder)
+2019-12-13 09:24:15.070 [main] DEBUG com.csdj.lyn.LynApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-13 09:24:15.080 [main] INFO  com.csdj.lyn.LynApplication - No active profile set, falling back to default profiles: default
+2019-12-13 09:24:17.315 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-13 09:24:17.315 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-13 09:24:17.315 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-13 09:24:17.325 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-13 09:24:17.325 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-12-13 09:24:17.325 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-13 09:24:17.325 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-13 09:24:17.325 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-12-13 09:24:17.505 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring embedded WebApplicationContext
+2019-12-13 09:24:17.685 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-12-13 09:24:17.685 [main] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-13 09:24:17.835 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-12-13 09:24:17.885 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-13 09:24:18.055 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-13 09:24:18.205 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-13 09:24:18.345 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-13 09:24:18.545 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-13 09:24:19.335 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-13 09:24:19.365 [main] INFO  com.csdj.lyn.LynApplication - Started LynApplication in 5.157 seconds (JVM running for 6.998)
+2019-12-13 09:25:05.635 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-13 09:25:06.179 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:25:06.226 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:25:06.250 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:25:06.252 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:25:06.253 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:25:06.257 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 2
+2019-12-13 09:25:07.200 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - ==>  Preparing: SELECT * FROM `purchaseorder` WHERE`id`=? 
+2019-12-13 09:25:07.201 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - ==> Parameters: 4(Integer)
+2019-12-13 09:25:07.203 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - <==      Total: 1
+2019-12-13 09:25:22.652 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - ==>  Preparing: update purchaseorder SET project=?, supplier=?, suppdate=?, suppliercontact=?, sarehouse=?, buyer=?, totalorders=? WHERE id=? 
+2019-12-13 09:25:22.652 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - ==> Parameters: 电脑(String), 阿达(String), 2019-09-09(String), 10000(String), 1313131(String), 2313(String), 131(String), 4(Integer)
+2019-12-13 09:25:22.655 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - <==    Updates: 1
+2019-12-13 09:25:24.807 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:25:24.807 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:25:24.808 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:25:24.809 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:25:24.809 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:25:24.813 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 2
+2019-12-13 09:25:29.748 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.PurchaseMapper.delId - ==>  Preparing: DELETE FROM `purchaseorder` WHERE id=? 
+2019-12-13 09:25:29.748 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.PurchaseMapper.delId - ==> Parameters: 4(Integer)
+2019-12-13 09:25:29.751 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.PurchaseMapper.delId - <==    Updates: 1
+2019-12-13 09:25:37.301 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - ==>  Preparing: SELECT * FROM `purchaseorder` WHERE`id`=? 
+2019-12-13 09:25:37.302 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - ==> Parameters: 1(Integer)
+2019-12-13 09:25:37.305 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - <==      Total: 1
+2019-12-13 09:25:40.889 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - ==>  Preparing: update purchaseorder SET project=?, supplier=?, suppdate=?, suppliercontact=?, sarehouse=?, buyer=?, totalorders=? WHERE id=? 
+2019-12-13 09:25:40.890 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - ==> Parameters: 手机(String), 长沙daji(String), 2019-12-13(String), 17674444444444(String), 23131(String), 陆岳南(String), 15000(String), 1(Integer)
+2019-12-13 09:25:40.893 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - <==    Updates: 1
+2019-12-13 09:25:43.095 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:25:43.095 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:25:43.096 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:25:43.097 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:25:43.098 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:25:43.099 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 1
+2019-12-13 09:25:47.347 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:25:47.347 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:25:47.348 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:25:47.349 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:25:47.350 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:25:47.350 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 1
+2019-12-13 09:25:48.298 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - ==>  Preparing: SELECT * FROM `purchaseorder` WHERE`id`=? 
+2019-12-13 09:25:48.299 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - ==> Parameters: 1(Integer)
+2019-12-13 09:25:48.301 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCarById - <==      Total: 1
+2019-12-13 09:25:52.951 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - ==>  Preparing: update purchaseorder SET project=?, supplier=?, suppdate=?, suppliercontact=?, sarehouse=?, buyer=?, totalorders=? WHERE id=? 
+2019-12-13 09:25:52.953 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - ==> Parameters: 手机(String), 长沙daji(String), 2019-12-13(String), 17674444444444(String), 23131(String), zemg1(String), 15000(String), 1(Integer)
+2019-12-13 09:25:52.956 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findupdate - <==    Updates: 1
+2019-12-13 09:25:55.042 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:25:55.043 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:25:55.045 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:25:55.047 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:25:55.049 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:25:55.050 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 1
+2019-12-13 09:25:59.354 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.delId - ==>  Preparing: DELETE FROM `purchaseorder` WHERE id=? 
+2019-12-13 09:25:59.355 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.delId - ==> Parameters: 1(Integer)
+2019-12-13 09:25:59.358 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.PurchaseMapper.delId - <==    Updates: 1
+2019-12-13 09:26:18.005 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.addCri - ==>  Preparing: INSERT INTO `purchaseorder`(`project`,`supplier`,`suppdate`,`suppliercontact`,`sarehouse`,`buyer`,`totalorders`)VALUES(?,?,?,?,?,?,?) 
+2019-12-13 09:26:18.006 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.addCri - ==> Parameters: 电脑(String), 阿达(String), 2019-09-09(String), 10000(String), 1131313(String), 2313(String), ad1(String)
+2019-12-13 09:26:18.008 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.PurchaseMapper.addCri - <==    Updates: 1
+2019-12-13 09:26:22.319 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-13 09:26:22.319 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-13 09:26:22.320 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-13 09:26:22.321 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-13 09:26:22.322 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-13 09:26:22.323 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 1

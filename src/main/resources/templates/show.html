@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="layui-v2.5.5/layui/css/layui.css">
+
+    <script src="layui-v2.5.5/layui/jquery-1.12.4.js"></script>
+    <script src="layui-v2.5.5/layui/layui.js"></script>
+
+</head>
+<body>
+<form class="layui-form">
+    <div class="layui-container">
+        <div class="layui-row">
+            <div class="layui-col-sm6">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">姓名</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input" name="project" id="project">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6" id="toolbtngroup" style="text-align: right">
+                <button type="button" class="layui-btn "
+                        data-type="findCriName">
+                    <i class="layui-icon layui-icon-search"></i>查询
+                </button>
+                <button type="button" class="layui-btn " data-type="addCriName" id="add">
+                    <i class="layui-icon layui-icon-addition"></i>添加
+                </button>
+            </div>
+        </div>
+        <div class="layui-row">
+            <div class="layui-col-sm12">
+                <table class="layui-hide" id="test" lay-filter="testCri"></table>
+                <script type="text/html" id="barDemo">
+                    <a class="layui-btn layui-btn-xs" lay-event="edit">
+                        <i class="layui-icon layui-icon-edit"></i>修改
+                    </a>
+                    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">
+                        <i class="layui-icon layui-icon-delete"></i>删除
+                    </a>
+                </script>
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="findCriId">
+</form>
+</body>
+<script type="text/javascript">
+
+    layui.use(['table', "layer"], function () {
+        var table = layui.table;
+        var layer = layui.layer;
+        table.render({
+            id: "testCritable",
+            elem: "#test",
+            url: "findshow.do",
+            page: true, //分页
+            height: 520, //容器高度
+            limit: 10,//每页显示数据条数,默认10条
+            //toolbar: '#toolbardemo',//仅开启工具栏，不显示左侧模板
+            cols: [
+                [
+                    {field: 'id', width: 80, title: '编号', sort: true},
+                    {field: 'project', width: 80, title: '项目'},
+                    {field: 'supplier', width: 80, title: '供应商'},
+                    {field: 'suppdate', width: 80, title: '日期'},
+                    {field: 'suppliercontact', width: 80, title: '供应商联系人'},
+                    {field: 'sarehouse', width: 100, title: '仓库'},
+                    {field: 'totalorders', width: 100, title: '订单总额'},
+                    {field: 'buyer', width: 100, title: '采购员'},
+                    {fixed: 'right', title: "操作", toolbar: "#barDemo", width: 150}
+                ]
+            ]
+        });
+        var $ = layui.$, active = {
+            findCriName: function () {
+                var index2 = layer.load(3);
+                setTimeout(function () {
+                    table.reload("testCritable", {
+                        page: {
+                            curr: 1
+                        },
+                        where: {
+                            project: $("#project").val()
+                        }
+                    });
+                    layer.close(index2);
+                }, 800);
+
+            },
+            addCriName: function () {
+                $("#findCriId").val(0)
+                layer.open({
+                    type: 2 //此处以iframe举例
+                    , title: '信息' //标题
+                    , area: ['700px', '560px'] //窗体大小
+                    , shade: 0.5 //遮罩层
+                    , maxmin: true //最大化最小化
+                    , anim: 6 //动画
+                    , resize: false //是否允许拉伸
+                    , shadeClose: true //是否点击遮罩关闭
+                    , content: '/layui/ad.htmls' //内容
+                });
+
+            }
+
+        }
+        $("#toolbtngroup .layui-btn").on('click', function () {
+            var type = $(this).data('type');
+            active[type] ? active[type].call(this) : '';
+
+        })
+        table.on('tool(testCri)', function (obj) {
+            var data = obj.data;
+            if (obj.event === 'del') {
+                layer.confirm('真的要删除吗?', function (index) {
+                    $.ajax({
+                        type: "post",
+                        url: "editCri.do",
+                        data: {
+                            id: data.id,
+                        },
+                        dataType: "json",
+                        success: function (data) {
+                            if (data > 0) {
+                                layer.msg('删除信息成功', {icon: 6, time: 2000})
+                            } else {
+                                layer.msg('删除信息失败', {icon: 5, time: 2000})
+                            }
+                        }, error: function () {
+                            layer.msg('ajax执行错误', {icon: 2, time: 2000})
+                        }
+                    });
+                    obj.del();
+                })
+            } else if (obj.event === 'edit') {//根据id查询数据（修改）
+
+                $("#findCriId").val(data.id)
+                layer.open({
+                    type: 2 //此处以iframe举例
+                    , title: '信息' //标题
+                    , area: ['700px', '560px'] //窗体大小
+                    , shade: 0.5 //遮罩层
+                    , maxmin: true //最大化最小化
+                    , anim: 6 //动画
+                    , resize: false //是否允许拉伸
+                    , shadeClose: true //是否点击遮罩关闭
+                    , content: '/layui/ad.htmls' //地址
+                });
+            }
+        })
+    });
+
+</script>
+</html>

@@ -1,0 +1,55 @@
+2019-12-16 09:08:48.918 [main] INFO  com.csdj.lyn.LynApplication - Starting LynApplication on DESKTOP-E1183FD with PID 16408 (C:\Users\mi\Desktop\PurchaseOrder\target\classes started by mi in C:\Users\mi\Desktop\PurchaseOrder)
+2019-12-16 09:08:48.920 [main] DEBUG com.csdj.lyn.LynApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-16 09:08:48.921 [main] INFO  com.csdj.lyn.LynApplication - No active profile set, falling back to default profiles: default
+2019-12-16 09:08:50.979 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-16 09:08:50.981 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-16 09:08:50.982 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-16 09:08:50.984 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-16 09:08:50.985 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-12-16 09:08:50.985 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-16 09:08:50.985 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-16 09:08:51.001 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-12-16 09:08:51.168 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring embedded WebApplicationContext
+2019-12-16 09:08:51.330 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-12-16 09:08:51.331 [main] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-16 09:08:51.490 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-12-16 09:08:51.555 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-16 09:08:51.749 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-16 09:08:51.975 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-16 09:08:52.141 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-16 09:08:52.380 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-16 09:08:53.491 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-16 09:08:53.544 [main] INFO  com.csdj.lyn.LynApplication - Started LynApplication in 5.446 seconds (JVM running for 8.528)
+2019-12-16 09:09:24.869 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 09:09:45.192 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==>  Preparing: SELECT COUNT(1) FROM `purchaseorder` 
+2019-12-16 09:09:45.227 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - ==> Parameters: 
+2019-12-16 09:09:45.254 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.count - <==      Total: 1
+2019-12-16 09:09:45.256 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==>  Preparing: SELECT * FROM `purchaseorder` limit ?,?; 
+2019-12-16 09:09:45.257 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - ==> Parameters: 0(Integer), 10(Integer)
+2019-12-16 09:09:45.282 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.PurchaseMapper.findCriName - <==      Total: 1
+2019-12-16 09:12:28.818 [main] INFO  com.csdj.lyn.LynApplication - Starting LynApplication on DESKTOP-E1183FD with PID 4064 (C:\Users\mi\Desktop\PurchaseOrder\target\classes started by mi in C:\Users\mi\Desktop\PurchaseOrder)
+2019-12-16 09:12:28.820 [main] DEBUG com.csdj.lyn.LynApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-16 09:12:28.821 [main] INFO  com.csdj.lyn.LynApplication - No active profile set, falling back to default profiles: default
+2019-12-16 09:12:30.642 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-16 09:12:30.643 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-16 09:12:30.644 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-16 09:12:30.646 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-16 09:12:30.646 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-12-16 09:12:30.647 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-16 09:12:30.648 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-16 09:12:30.653 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-12-16 09:12:30.826 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring embedded WebApplicationContext
+2019-12-16 09:12:30.991 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-12-16 09:12:30.993 [main] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-16 09:12:31.164 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-12-16 09:12:31.233 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-16 09:12:31.425 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-16 09:12:31.621 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-16 09:12:31.868 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-16 09:12:32.182 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-16 09:12:33.339 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-16 09:12:33.382 [main] INFO  com.csdj.lyn.LynApplication - Started LynApplication in 5.196 seconds (JVM running for 7.551)
+2019-12-16 09:13:25.537 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-16 09:13:25.672 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-16 09:13:25.694 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-16 09:13:25.709 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6

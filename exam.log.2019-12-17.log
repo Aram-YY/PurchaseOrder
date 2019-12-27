@@ -1,0 +1,440 @@
+2019-12-17 08:45:56.028 [main] INFO  com.csdj.lyn.LynApplication - Starting LynApplication on DESKTOP-E1183FD with PID 3716 (C:\Users\mi\Desktop\PurchaseOrder\target\classes started by mi in C:\Users\mi\Desktop\PurchaseOrder)
+2019-12-17 08:45:56.032 [main] DEBUG com.csdj.lyn.LynApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-17 08:45:56.039 [main] INFO  com.csdj.lyn.LynApplication - No active profile set, falling back to default profiles: default
+2019-12-17 08:45:59.829 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-17 08:45:59.832 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-17 08:45:59.832 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-17 08:45:59.850 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-17 08:45:59.851 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-12-17 08:45:59.884 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-17 08:45:59.886 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-17 08:45:59.930 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-12-17 08:46:00.298 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring embedded WebApplicationContext
+2019-12-17 08:46:00.946 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-12-17 08:46:00.953 [main] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-17 08:46:01.348 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-12-17 08:46:01.469 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-17 08:46:01.778 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-17 08:46:02.122 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-17 08:46:02.411 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-17 08:46:02.831 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-17 08:46:04.123 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-17 08:46:04.190 [main] INFO  com.csdj.lyn.LynApplication - Started LynApplication in 9.187 seconds (JVM running for 13.35)
+2019-12-17 08:49:41.452 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-17 08:49:50.460 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 08:49:50.489 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 08:49:50.521 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:02:42.336 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:02:42.337 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:02:42.343 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:03:14.590 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:03:14.591 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:03:14.599 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:03:40.697 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:03:40.698 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:03:40.702 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:04:16.875 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:04:16.876 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:04:16.881 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:05:22.217 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:05:22.219 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:05:22.229 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:05:54.840 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:05:54.841 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:05:54.844 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:06:58.127 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:06:58.128 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:06:58.137 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:09:02.776 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:09:02.779 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:09:02.787 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:09:21.891 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:09:21.892 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:09:21.896 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:10:01.284 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:10:01.285 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:10:01.288 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:11:14.670 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:11:14.671 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:11:14.675 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:17:52.515 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:17:52.516 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:17:52.543 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:18:22.522 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:18:22.523 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:18:22.527 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:19:13.344 [main] INFO  com.csdj.lyn.LynApplication - Starting LynApplication on DESKTOP-E1183FD with PID 8460 (C:\Users\mi\Desktop\PurchaseOrder\target\classes started by mi in C:\Users\mi\Desktop\PurchaseOrder)
+2019-12-17 09:19:13.347 [main] DEBUG com.csdj.lyn.LynApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-17 09:19:13.348 [main] INFO  com.csdj.lyn.LynApplication - No active profile set, falling back to default profiles: default
+2019-12-17 09:19:15.607 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-17 09:19:15.608 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-17 09:19:15.609 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-17 09:19:15.611 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-17 09:19:15.611 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-12-17 09:19:15.612 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-17 09:19:15.612 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-17 09:19:15.619 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-12-17 09:19:15.820 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring embedded WebApplicationContext
+2019-12-17 09:19:16.026 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-12-17 09:19:16.027 [main] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-17 09:19:16.228 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-12-17 09:19:16.302 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-17 09:19:16.508 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-17 09:19:16.740 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-17 09:19:16.947 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-17 09:19:17.247 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-17 09:19:18.698 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-17 09:19:18.740 [main] INFO  com.csdj.lyn.LynApplication - Started LynApplication in 6.385 seconds (JVM running for 9.603)
+2019-12-17 09:19:45.325 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-17 09:19:45.593 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:19:45.634 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:19:45.658 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:24:35.014 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:24:35.015 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:24:35.024 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:26:29.975 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:26:29.976 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:26:29.984 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:28:12.649 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:28:12.650 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:28:12.654 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:30:26.435 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:30:26.436 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:30:26.444 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:32:30.210 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:32:30.211 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:32:30.218 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:32:42.811 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:32:42.812 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:32:42.815 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:35:39.655 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:35:39.656 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:35:39.664 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:36:09.898 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:36:09.899 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:36:09.902 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 09:44:23.047 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 09:44:23.049 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 09:44:23.053 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 10:38:41.809 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 10:38:41.813 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 10:38:41.834 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 11:03:07.261 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 11:03:07.262 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 11:03:07.272 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 11:04:24.868 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 11:04:24.869 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 11:04:24.872 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 11:05:59.486 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 11:05:59.487 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 11:05:59.491 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 11:14:08.241 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 11:14:08.244 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 11:14:08.250 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 11:15:46.089 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 11:15:46.090 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 11:15:46.099 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 11:16:42.471 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 11:16:42.472 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 11:16:42.475 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 11:20:50.287 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 11:20:50.288 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 11:20:50.293 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 11:21:12.725 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 11:21:12.726 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 11:21:12.729 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 11:23:32.380 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 11:23:32.381 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 11:23:32.386 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 11:23:58.418 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 11:23:58.419 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 11:23:58.421 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 11:24:27.774 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 11:24:27.775 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 11:24:27.779 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 11:25:24.800 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 11:25:24.802 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 11:25:24.807 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 15:59:54.519 [main] INFO  com.csdj.lyn.LynApplication - Starting LynApplication on DESKTOP-E1183FD with PID 20852 (C:\Users\mi\Desktop\PurchaseOrder\target\classes started by mi in C:\Users\mi\Desktop\PurchaseOrder)
+2019-12-17 15:59:54.523 [main] DEBUG com.csdj.lyn.LynApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-17 15:59:54.524 [main] INFO  com.csdj.lyn.LynApplication - No active profile set, falling back to default profiles: default
+2019-12-17 15:59:59.927 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-17 15:59:59.928 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-17 15:59:59.929 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-17 15:59:59.934 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-17 15:59:59.934 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-12-17 15:59:59.935 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-17 15:59:59.936 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-17 15:59:59.966 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-12-17 16:00:00.560 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring embedded WebApplicationContext
+2019-12-17 16:00:01.325 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-12-17 16:00:01.329 [main] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-17 16:00:01.831 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-12-17 16:00:02.025 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-17 16:00:02.555 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-17 16:00:03.090 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-17 16:00:03.513 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-17 16:00:03.928 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-17 16:00:08.289 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-17 16:00:08.451 [main] INFO  com.csdj.lyn.LynApplication - Started LynApplication in 15.739 seconds (JVM running for 21.448)
+2019-12-17 16:00:25.215 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-17 16:00:26.069 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 16:00:26.153 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 16:00:26.228 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 16:07:00.772 [main] INFO  com.csdj.lyn.LynApplication - Starting LynApplication on DESKTOP-E1183FD with PID 18716 (C:\Users\mi\Desktop\PurchaseOrder\target\classes started by mi in C:\Users\mi\Desktop\PurchaseOrder)
+2019-12-17 16:07:00.777 [main] DEBUG com.csdj.lyn.LynApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2019-12-17 16:07:00.778 [main] INFO  com.csdj.lyn.LynApplication - No active profile set, falling back to default profiles: default
+2019-12-17 16:07:06.232 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-12-17 16:07:06.238 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-12-17 16:07:06.239 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-17 16:07:06.244 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-12-17 16:07:06.245 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-12-17 16:07:06.246 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-12-17 16:07:06.246 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-12-17 16:07:06.264 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-12-17 16:07:06.674 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring embedded WebApplicationContext
+2019-12-17 16:07:06.978 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-12-17 16:07:06.980 [main] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-12-17 16:07:07.244 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-12-17 16:07:07.344 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-17 16:07:07.701 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-17 16:07:08.037 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-17 16:07:08.346 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2019-12-17 16:07:08.833 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-17 16:07:12.383 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-12-17 16:07:12.518 [main] INFO  com.csdj.lyn.LynApplication - Started LynApplication in 13.404 seconds (JVM running for 19.106)
+2019-12-17 16:07:54.711 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/layui] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-17 16:07:55.231 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 16:07:55.322 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 16:07:55.364 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 16:07:56.867 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:07:56.869 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:07:56.875 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:07:58.356 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:07:58.360 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:07:58.363 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:07:59.547 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:07:59.548 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:07:59.552 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:08:00.478 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:00.479 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:08:00.483 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:08:01.007 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:01.008 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 已完成(String)
+2019-12-17 16:08:01.011 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:08:01.529 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:01.530 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:08:01.535 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:08:01.933 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:01.933 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:08:01.937 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:08:02.418 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:02.419 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:08:02.421 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:08:06.243 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:06.244 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:08:06.248 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:08:06.718 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:06.720 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:08:06.725 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:08:07.343 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:07.344 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 已完成(String)
+2019-12-17 16:08:07.347 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:08:07.799 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:07.802 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:08:07.806 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:08:08.144 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:08.145 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:08:08.148 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:08:08.455 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:08.456 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:08:08.457 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:08:48.963 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 16:08:48.965 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 16:08:48.979 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 16:08:53.020 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:53.021 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:08:53.023 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:08:54.051 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:54.053 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:08:54.057 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:08:54.761 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:08:54.762 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:08:54.763 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:09:02.498 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:09:02.500 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:09:02.505 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:09:03.108 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:09:03.108 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 已完成(String)
+2019-12-17 16:09:03.110 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:09:03.930 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:09:03.931 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:09:03.936 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:10:00.928 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 16:10:00.930 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 16:10:00.939 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 16:10:02.242 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:02.243 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:10:02.246 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:10:03.299 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:03.301 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:10:03.304 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:10:04.204 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:04.206 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:10:04.208 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:10:08.147 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:08.150 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:10:08.152 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:10:40.672 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:40.673 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:10:40.676 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:10:41.298 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:41.300 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 已完成(String)
+2019-12-17 16:10:41.303 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:10:42.025 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:42.027 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:10:42.030 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:10:43.298 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:43.299 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:10:43.302 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:10:43.753 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:43.753 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 已完成(String)
+2019-12-17 16:10:43.754 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:10:44.392 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:44.393 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:10:44.395 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:10:45.066 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:45.066 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:10:45.068 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:10:46.982 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 16:10:46.983 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 16:10:46.986 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 16:10:47.760 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:47.760 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:10:47.763 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:10:48.151 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:48.152 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:10:48.154 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:10:48.583 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:48.584 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:10:48.586 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:10:48.990 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:48.991 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 已完成(String)
+2019-12-17 16:10:48.994 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:10:49.680 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:49.680 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:10:49.682 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:10:51.140 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:10:51.142 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:10:51.144 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:11:36.162 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:11:36.163 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:11:36.169 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:11:36.604 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:11:36.605 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:11:36.606 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:11:38.093 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:11:38.094 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:11:38.097 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:11:38.354 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:11:38.355 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:11:38.357 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:11:39.712 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:11:39.714 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:11:39.718 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:11:40.199 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:11:40.200 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:11:40.201 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 0
+2019-12-17 16:12:36.431 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 16:12:36.434 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 16:12:36.440 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 16:12:38.070 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:12:38.071 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:12:38.074 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:12:39.013 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:12:39.016 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:12:39.020 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:12:39.556 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:12:39.557 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:12:39.560 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:12:40.011 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:12:40.012 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 已完成(String)
+2019-12-17 16:12:40.018 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:12:40.466 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:12:40.467 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:12:40.469 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:12:41.167 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:12:41.168 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:12:41.171 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:12:41.603 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:12:41.604 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:12:41.606 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:56:35.834 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:56:35.836 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 已完成(String)
+2019-12-17 16:56:35.846 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:56:36.264 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:56:36.265 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:56:36.268 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:56:36.724 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:56:36.724 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:56:36.726 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:56:37.113 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:56:37.113 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 16:56:37.115 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 16:58:15.876 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:58:15.879 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 16:58:15.886 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:58:17.001 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:58:17.002 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 16:58:17.004 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 16:58:17.775 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 16:58:17.776 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 已完成(String)
+2019-12-17 16:58:17.779 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 17:03:37.521 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 17:03:37.522 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 17:03:37.524 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 17:03:38.054 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 17:03:38.055 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 17:03:38.058 [http-nio-8080-exec-3] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 17:03:38.829 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 17:03:38.830 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 17:03:38.831 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 17:03:41.747 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 17:03:41.748 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 17:03:41.751 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 17:03:41.947 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 17:03:41.948 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 17:03:41.951 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 17:03:42.223 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 17:03:42.223 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 17:03:42.225 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 17:03:42.732 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 17:03:42.734 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 已完成(String)
+2019-12-17 17:03:42.736 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 17:03:43.207 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 17:03:43.209 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待收货(String)
+2019-12-17 17:03:43.213 [http-nio-8080-exec-5] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 17:03:43.509 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 17:03:43.509 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 17:03:43.511 [http-nio-8080-exec-6] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 17:03:43.703 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 17:03:43.703 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 17:03:43.705 [http-nio-8080-exec-9] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 17:03:43.858 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` 
+2019-12-17 17:03:43.859 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 
+2019-12-17 17:03:43.861 [http-nio-8080-exec-10] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 6
+2019-12-17 17:13:12.571 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 17:13:12.572 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待付款(String)
+2019-12-17 17:13:12.577 [http-nio-8080-exec-4] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1
+2019-12-17 17:13:12.854 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 17:13:12.855 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 17:13:12.858 [http-nio-8080-exec-7] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 17:13:13.049 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 17:13:13.050 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 17:13:13.052 [http-nio-8080-exec-8] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 17:13:13.237 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 17:13:13.238 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 待发货(String)
+2019-12-17 17:13:13.240 [http-nio-8080-exec-1] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 2
+2019-12-17 17:13:14.572 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==>  Preparing: SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid` and a.start = ? 
+2019-12-17 17:13:14.572 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - ==> Parameters: 已完成(String)
+2019-12-17 17:13:14.575 [http-nio-8080-exec-2] DEBUG com.csdj.lyn.mapper.OrderformMapper.findOrderForm - <==      Total: 1

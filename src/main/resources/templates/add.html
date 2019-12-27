@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="layui-v2.5.5/layui/css/layui.css">
+
+    <script src="layui-v2.5.5/layui/jquery-1.12.4.js"></script>
+    <script src="layui-v2.5.5/layui/layui.js"></script>
+</head>
+<body onload="findLoadId()">
+<form>
+<input type="text" id="id">
+<div class="layui-container">
+    <div class="layui-row">
+        <div class="layui-col-sm6">
+            <div class="layui-form-item">
+                <label class="layui-form-label">项目 </label>
+                <div class="layui-input-inline">
+                    <input id="project" type="text" class="layui-input" name="project">
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-sm6">
+            <div class="layui-form-item">
+                <label class="layui-form-label">供应商</label>
+                <div class="layui-input-inline">
+                    <input id="supplier" type="text" class="layui-input" name="supplier">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-row">
+    </div>
+    <div class="layui-row">
+        <div class="layui-col-sm6">
+            <div class="layui-form-item">
+                <label class="layui-form-label">日期 </label>
+                <div class="layui-input-inline">
+                    <input type="text" class="layui-input" id="suppdate" name="suppdate">
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-sm6">
+            <div class="layui-form-item">
+                <label class="layui-form-label">订单总额 </label>
+                <div class="layui-input-inline">
+                    <input type="number" class="layui-input" id="suppliercontact" name="suppliercontact">
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-sm6">
+            <div class="layui-form-item">
+                <label class="layui-form-label">供应商联系人</label>
+                <div class="layui-input-inline">
+                    <input type="number" class="layui-input" id="sarehouse" name="sarehouse">
+                </div>
+            </div>
+        </div>
+        <div class="layui-row">
+            <div class="layui-col-sm6">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">仓库 </label>
+                    <div class="layui-input-inline">
+                        <input type="text" id="buyer" class="layui-input" name="buyer">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">采购员 </label>
+                    <div class="layui-input-inline">
+                        <input type="text" id="totalorders" class="layui-input" name="totalorders">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-row">
+            <div class="layui-col-sm7" style="text-align: right">
+                <button type="button" id="btnAdd" class="layui-btn" data-method="add">
+                    <i class="layui-icon layui-icon-add-1">
+                        添加
+                    </i>
+                </button>
+                <button type="button" id="edit" class="layui-btn" data-method="info">
+                    <i class="layui-icon layui-icon-edit">
+                        修改
+                    </i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+</body>
+<<script type="text/javascript">
+    $(function () {
+        //子页面获取父页面的值
+        $("#id").val(parent.$("#findCriId").val())//获取父页面id
+    })
+</script>
+<script type="text/javascript">
+    function findLoadId() {
+        var id = $("#id").val();
+        if (id > 0) {
+            $.ajax({
+                type: "post",
+                url: "findCarById.do",
+                data: {
+                    id: id
+                },
+                dataType: "json",
+                success: function (data) {
+                    $("#id").val(id);
+                    $("#project").val(data.project);
+                    $("#supplier").val(data.supplier);
+                    $("#suppdate").val(data.suppdate);
+                    $("#suppliercontact").val(data.suppliercontact);
+                    $("#sarehouse").val(data.sarehouse);
+                    $("#buyer").val(data.buyer);
+                    $("#totalorders").val(data.totalorders);
+                    layui.use(['form'], function () {
+                        var form = layui.form;
+                        form.render(); //刷新select选择框渲染
+                    });
+                },
+                error: function () {
+                    layer.msg('ajax执行错误!', {icon: 2, time: 2000});
+                }
+            });
+        }
+
+    }
+
+    layui.use('laydate', function () {
+        var laydate = layui.laydate;
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#date1',//指定元素
+            type: "date",//默认date
+            value: new Date(),
+            format: "yyyy-MM-dd"
+        });
+    });
+
+    layui.use(['laydate', 'form'], function () {
+        var laydate = layui.laydate,
+            form = layui.form;
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#date1',//指定元素
+            type: "date",//默认date
+            value: new Date(),
+            format: "yyyy-MM-dd"
+        });
+    });
+    $(function () {
+        $("#btnAdd").click(function () {
+            var id = $("#id").val()
+            if (id > 0) {
+                $.ajax({
+                    type: "post",
+                    url: "findupdate.do",
+                    data: {
+                        id: $("#id").val(),
+                        project: $("#project").val(),
+                        supplier: $("#supplier").val(),
+                        suppdate: $("#suppdate").val(),
+                        suppliercontact: $("#suppliercontact").val(),
+                        sarehouse: $("#sarehouse").val(),
+                        buyer: $("#buyer").val(),
+                        totalorders: $("#totalorders").val()
+
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                        alert(data);
+                        if (data > 0) {
+                            layer.msg('修改成功', {icon: 6, time: 2000})
+                            var index = layer.msg("修改成功！", {icon: 6, time: false, shade: 0});
+                            setTimeout(function () {
+                                layer.close(index);
+                                parent.layer.closeAll(); //关闭弹窗
+                                window.parent.location.reload();//刷新父页面
+                            }, 1000);
+                        } else {
+                            layer.msg('修改失败', {icon: 5, time: 2000})
+                        }
+                    }, errors: function () {
+                        layer.msg('ajax执行错误', {icon: 5, time: 2000})
+                    }
+                })
+            } else {
+                $.ajax({
+                    type: "post",
+                    url: "addcri.do",
+                    data: {
+                        project: $("#project").val(),
+                        supplier: $("#supplier").val(),
+                        suppdate: $("#suppdate").val(),
+                        suppliercontact: $("#suppliercontact").val(),
+                        sarehouse: $("#sarehouse").val(),
+                        buyer: $("#buyer").val(),
+                        totalorders: $("#totalorders").val(),
+
+                    },
+                    dataType: "json",
+                    success: function (data) {
+                        if (data > 0) {
+                            layer.msg('添加成功', {icon: 6, time: 2000})
+                        } else {
+                            layer.msg('添加失败', {icon: 5, time: 2000})
+                        }
+                    }, errors: function () {
+                        layer.msg('ajax执行错误', {icon: 5, time: 2000})
+                    }
+                })
+            }
+
+        })
+
+    })
+
+</script>
+</html>

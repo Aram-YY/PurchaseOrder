@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.csdj.lyn.mapper.OrderformMapper">
+    <resultMap id="OMap" type="com.csdj.lyn.entity.Orderform">
+        <id column="did" property="did"/>
+        <result property="start" column="start"/>
+        <result property="cont_count" column="cont_count"/>
+        <result property="count_money" column="count_money"/>
+        <collection property="objOrderdetailed" ofType="com.csdj.lyn.entity.Orderdetailed">
+            <id column="mid" property="mid"/>
+            <result property="name" column="name"/>
+            <result property="img" column="img"/>
+            <result property="price" column="price"/>
+            <result property="mdid" column="mdid"/>
+        </collection>
+    </resultMap>
+    <select id="findOrderForm" resultMap="OMap" parameterType="String">
+        SELECT * FROM `orderform` a,`orderdetailed` b WHERE a.`did`=b.`mdid`
+        <if test="start !=null and start !=''">
+            and a.start = #{start}
+        </if>
+    </select>
+</mapper>

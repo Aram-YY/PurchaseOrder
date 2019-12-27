@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.csdj.lyn.mapper.PurchaseMapper">
+    <resultMap id="PMap" type="com.csdj.lyn.entity.Purchasea">
+        <id column="id" property="id"/>
+        <result property="project" column="project"/>
+        <result property="supplier" column="supplier"/>
+        <result property="suppdate" column="suppdate"/>
+        <result property="suppliercontact" column="suppliercontact"/>
+        <result property="sarehouse" column="sarehouse"/>
+        <result property="buyer" column="buyer"/>
+        <result property="totalorders" column="totalorders"/>
+
+    </resultMap>
+    <select id="findCriName" resultMap="PMap">
+       SELECT * FROM `purchaseorder`
+       <where>
+           <if test="project!=null and project!=''">
+             and  `project` LIKE CONCAT('%',#{project},'%')
+           </if>
+       </where>
+        limit #{currPage},#{pageSize};
+    </select>
+    <select id="count" resultType="int">
+        SELECT COUNT(1) FROM `purchaseorder`
+        <where>
+            <if test="project!=null and project!=''">
+              and  `project` LIKE CONCAT('%',#{project},'%')
+            </if>
+        </where>
+
+    </select>
+    <insert id="addCri">
+       INSERT INTO `purchaseorder`(`project`,`supplier`,`suppdate`,`suppliercontact`,`sarehouse`,`buyer`,`totalorders`)VALUES(#{project},#{supplier},#{suppdate},#{suppliercontact},#{sarehouse},#{buyer},#{totalorders})
+    </insert>
+    <select id="findCarById" resultMap="PMap">
+        SELECT * FROM `purchaseorder` WHERE`id`=#{id}
+    </select>
+    <update id="findupdate">
+        update  purchaseorder
+        <set>
+            <if test="project!=null and project!=''">
+                project=#{project},
+            </if>
+            <if test="supplier!=null and supplier!=''">
+                supplier=#{supplier},
+            </if>
+            <if test="suppdate!=null and suppdate!=''">
+                suppdate=#{suppdate},
+            </if>
+            <if test="suppliercontact!=null and suppliercontact!=''">
+                suppliercontact=#{suppliercontact},
+            </if>
+            <if test="sarehouse!=null and sarehouse!=''">
+                sarehouse=#{sarehouse},
+            </if>
+            <if test="buyer!=null and buyer!=''">
+                buyer=#{buyer},
+            </if>
+            <if test="totalorders!=null and totalorders!=''">
+                totalorders=#{totalorders},
+            </if>
+        </set>
+        WHERE  id=#{id}
+    </update>
+    <delete id="delId">
+        DELETE FROM `purchaseorder` WHERE id=#{id}
+    </delete>
+</mapper>
